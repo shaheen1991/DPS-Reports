@@ -16,7 +16,7 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
   ) : (
     <Fragment>
       <Link to='/posts' className='btn'>
-        Back To Posts
+        Back To All Reports
       </Link>
       <PostItem post={post} showActions={false} />
     </Fragment>
