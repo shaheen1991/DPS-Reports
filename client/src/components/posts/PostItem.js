@@ -32,7 +32,9 @@ const PostItem = ({
     <div>
       <h4>Created by: {name}</h4>
       <Link to={`/posts/${_id}`}>
-        <h6>File ID: {_id}</h6>
+        <h6>
+          File Id #: <Moment format='YY'>{date}</Moment>-{_id}
+        </h6>
       </Link>
       <p className='post-date'>
         Posted on <Moment format='YYYY/MM/DD'>{date}</Moment>

@@ -45,11 +45,11 @@ const PostForm = ({ addPost, history }) => {
     <Fragment>
       <h1 class='large text-primary'>Create An Incident Report File</h1>
       <div>
-        <Link className='btn btn-light my-1' to='/dashboard'>
+        {/* <Link className='btn btn-light my-1' to='/dashboard'>
           Go Back
-        </Link>
+        </Link> */}
       </div>
-      <small>* = required field</small>
+      {/* <small>* = required field</small> */}
       <form class='form' onSubmit={e => onSubmit(e)}>
         <div class='form-group'>
           <small className='form-text'>*Call Type</small>
@@ -194,7 +194,7 @@ const PostForm = ({ addPost, history }) => {
           <small className='form-text'>*Time of incedint:</small>
           <input
             type='time'
-            placeholder='00:00'
+            // placeholder='00:00'
             name='time'
             value={time}
             onChange={e => onChange(e)}
@@ -233,43 +233,3 @@ export default connect(
   mapStateToProps,
   { addPost }
 )(withRouter(PostForm));
-
-// const PostForm = ({ addPost }) => {
-//   const [text, setText] = useState('');
-
-//   return (
-//     <div className='post-form'>
-//       <div className='bg-primary p'>
-//         <h3>Say Something...</h3>
-//       </div>
-//       <form
-//         className='form my-1'
-//         onSubmit={e => {
-//           e.preventDefault();
-//           addPost({ text });
-//           setText('');
-//         }}
-//       >
-//         <textarea
-//           name='text'
-//           cols='30'
-//           rows='5'
-//           placeholder='Create a post'
-//           value={text}
-//           onChange={e => setText(e.target.value)}
-//           required
-//         />
-//         <input type='submit' className='btn btn-dark my-1' value='Submit' />
-//       </form>
-//     </div>
-//   );
-// };
-
-// PostForm.propTypes = {
-//   addPost: PropTypes.func.isRequired
-// };
-
-// export default connect(
-//   null,
-//   { addPost }
-// )(PostForm);

@@ -1,7 +1,7 @@
 {
   "name": "dps-reports",
   "version": "1.0.0",
-  "description": "Social network for developers",
+  "description": "Reports",
   "main": "server.js",
   "scripts": {
     "start": "node server",
@@ -20,6 +20,7 @@
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.5.1",
+    "mongoose-sequence": "^5.2.2",
     "request": "^2.88.0"
   },
   "devDependencies": {
