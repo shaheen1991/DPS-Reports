@@ -68,6 +68,6 @@ const PostSchema = new Schema(
 PostSchema.plugin(AutoIncrement, {
   inc_field: '_id',
 
-  start_seq: '1122362'
+  start_seq: '112232'
 });
 module.exports = Post = mongoose.model('post', PostSchema);
