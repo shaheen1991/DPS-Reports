@@ -392,7 +392,7 @@ const PostForm = ({ addPost, history }) => {
             onChange={e => onChange(e)}
           />
         </div>
-        <small className='form-text'>*Write incedint description:</small>
+        <small className='form-text'>*Write incident description:</small>
         <textarea
           name='text'
           cols='30'
@@ -404,7 +404,7 @@ const PostForm = ({ addPost, history }) => {
         />
 
         <div className='form-group'>
-          <small className='form-text'>*Time of incedint:</small>
+          <small className='form-text'>*Time of incident:</small>
           <input
             type='time'
             // placeholder='00:00'
@@ -415,7 +415,7 @@ const PostForm = ({ addPost, history }) => {
         </div>
 
         <div className='form-group'>
-          <small className='form-text'>*Date of incedint:</small>
+          <small className='form-text'>*Date of incident:</small>
           <input
             type='date'
             // placeholder='mm/dd/yyyy'
